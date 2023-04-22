@@ -336,7 +336,8 @@ h4{
 .enquiry-steps{
   padding: 40px 220px 40px 0;
   background-color: white;
-  flex: 1
+  flex: 1;
+  
 }
 /* .enquiry-steps:nth-child(0){
   padding-top: 40px;
@@ -375,20 +376,32 @@ h4{
   align-items: center;
   padding: 0 100px;
 
+  
 }
 
 .testimonial{
   flex-basis: 33%; 
-  height: 40vh;
+  height: 35vh;
   background-color:white;
   margin: 0 20px;
+  border-radius: 20px;
+
 
 }
 
 
 #section7 {
     height: 90vh;
-    background-color: #B4D4F3;
     text-shadow: none;
+}
+
+.cta-3{
+  height: 50vh;
+  width: 80vw;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  display: flex;
+  align-items: stretch;
 }
   
