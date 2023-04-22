@@ -3,20 +3,38 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+}
+/*headers*/
+
+header {
+  background-color:white;
+  color:black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 130px;
+ 
+}
+
+h1{
+  font-size: 60px;
+}
+h2{
+  font-size: 40px;
+
+}
+h3{
+  font-size: 30px;
+
+}
+h4{
+  font-size: 25px;
 }
 
 
 
-  header {
-    background-color:white;
-    color:black;
-    display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-    padding: 10px 130px;
-   
-  }
+  
   
   nav ul {
     list-style: none;
@@ -82,18 +100,11 @@
     flex-direction: row;
    
   }
-  #section_1{
-    display: flex;
-    align-items: stretch;
-	  flex-wrap: wrap;
-    
-    
-  }
-
+ 
   .left-div{
-    flex-basis: calc(50% - 20vw);
-    padding: 120px 10vw 40px 10vw ;
-    height: calc(60vh - 60px);
+    flex-basis: 50% ;
+    padding: 20px 5vw 40px 10vw ;
+    height: 60vh
  
     /* padding: 4rem; */
 
@@ -105,7 +116,7 @@
     padding-top: 100px;
 
   }
-  .bottom-div{
+  .client-div{
     height:30vh;
     padding-top: 20px;
   }
@@ -117,7 +128,7 @@
 
   @media (max-width: 975px) {
     .left-div{
-      flex-basis: calc(50% - 10vw);
+      flex-basis: 50%;
       padding: 150px 5vw 30px 5vw ;
 
     }
@@ -146,8 +157,8 @@
   }
 
   .hero-header{
-    font-size: 5.2vw;
     margin-bottom: 0.6rem;
+    
   }
 
   .cta-button-contact-us{
@@ -181,7 +192,7 @@
   }
 
   .section2-left-div{
-     flex-basis: 40%;
+    flex-basis: 40%;
     height:75vh;
     position: relative
     /* border-top-left-radius: 10px ;
@@ -199,7 +210,6 @@
     flex-basis: 60%;
     font-size: 80px;
     background-color: #515151;
-    background-color: black;
     height:75vh;
     /* width: 300%; */
     /* z-index: 1; */
@@ -209,15 +219,15 @@
   .section2-left-inner-background-div
   {
     background-color: yellow;
-    height: calc(53vh - 100px);
-    width: 23vw;
+    height: 53vh;
+    width: 30vw;
     border-top-left-radius: 10px ;
     border-bottom-left-radius: 20px ;
     position: absolute;
     bottom: 35px;
     right:0;
     padding: 70px 25px 20px 70px;
-   z-index: 2;
+    z-index: 2;
    
   }
 
@@ -229,7 +239,6 @@
   }
 
   .section2-left-header{
-    font-size: 40px;
      margin-bottom: 20px;
    
   }
@@ -244,6 +253,7 @@
     top: 200px;
     left: 65px;
     color: #F0EE3E;
+    font-size: 130px;
   }
 
 
@@ -263,7 +273,7 @@
   }
 
   .section3-right-div, .section4-left-div{
-    height: calc(60vh - 100px);
+    height: 60vh;
     flex-basis: 48%;
     background-color: #EDEDED;
     padding: 100px 160px 0 60px;
@@ -293,10 +303,9 @@
 
 .section5-upper-div-child-1{
  
-  height: calc(80vh - 40px);
-  background-color: grey;
-  flex-basis: 60%;
-  padding: 20px;
+  height: 80vh;
+  flex-basis: 50%;
+  padding: 60px;
   border-bottom-left-radius: inherit;
   
 }
@@ -308,13 +317,14 @@
 }
 
 .enquiry-div{
-
+ padding-top: 30px;
+ padding-right: 80px;
 }
 
 .section5-upper-div-child-2{
   height: 80vh;
   background-color: #B4D4F3;
-  flex-basis: 40%;
+  flex-basis: 50%;
   border-bottom-right-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -322,18 +332,17 @@
   align-items: center; */
   
 }
-.enquiry-step-1{
-  background-color: purple;
-  flex: auto;
-}
-.enquiry-step-2{
-  background-color: white;
-  flex: auto;
-}
-.enquiry-step-3{
-  background-color: wheat;
-  flex: auto;
 
+.enquiry-steps{
+  padding: 40px 220px 40px 0;
+  background-color: white;
+  flex: 1
+}
+/* .enquiry-steps:nth-child(0){
+  padding-top: 40px;
+} */
+.enquiry-para{
+  font-size: 15px;
 }
 
 
@@ -352,13 +361,34 @@
 }
   
 #section6 {
-    background-color: #B4D4F3;
+    display: block;
+    text-align: center;
+    height: 85vh;
     color: black;
     text-shadow: none;
+    padding: 100px 0;
 }
+
+.testimonial-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+
+}
+
+.testimonial{
+  flex-basis: 33%; 
+  height: 40vh;
+  background-color:white;
+  margin: 0 20px;
+
+}
+
+
 #section7 {
+    height: 90vh;
     background-color: #B4D4F3;
-    color: black;
     text-shadow: none;
 }
   
