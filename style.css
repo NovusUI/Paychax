@@ -3,6 +3,7 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
+  /* box-sizing: border-box; */
 }
 
 
@@ -279,7 +280,7 @@
   .sectio5-upper-div{
     background-color:white;
     width: 80vw;
-    height: 70vh;
+    height: 80vh;
     position: absolute;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -292,38 +293,72 @@
 
 .section5-upper-div-child-1{
  
-  height: 70vh;
+  height: calc(80vh - 40px);
   background-color: grey;
   flex-basis: 60%;
-}
-.section5-upper-div-child-2{
-  height: 70vh;
-  background-color: #B4D4F3;
-  flex-basis: 40%;
+  padding: 20px;
+  border-bottom-left-radius: inherit;
+  
 }
 
-  .sectio5-inner-div{
+.section5-pic{
+    height: 30vh ;
+    width: 20vw;
+    background-color: aliceblue;
+}
+
+.enquiry-div{
+
+}
+
+.section5-upper-div-child-2{
+  height: 80vh;
+  background-color: #B4D4F3;
+  flex-basis: 40%;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  
+}
+.enquiry-step-1{
+  background-color: purple;
+  flex: auto;
+}
+.enquiry-step-2{
+  background-color: white;
+  flex: auto;
+}
+.enquiry-step-3{
+  background-color: wheat;
+  flex: auto;
+
+}
+
+
+.sectio5-inner-div{
 
     background-color: #EDEDED;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 77vw;
-    height: 70vh;
+    height: 80vh;
     position: absolute;
-    bottom:95px;
+    bottom:60px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     
 
-  }
+}
   
-  #section6 {
+#section6 {
     background-color: #B4D4F3;
     color: black;
     text-shadow: none;
-  }
-  #section7 {
+}
+#section7 {
     background-color: #B4D4F3;
     color: black;
     text-shadow: none;
-  }
+}
   
