@@ -357,6 +357,10 @@ img{
    .left-div{
      flex-basis: 100%;
    }
+   .hero-header{
+     font-size: 50px;
+     padding: 60px 0;
+   }
   }
 
 
@@ -471,6 +475,9 @@ img{
     bottom: 20px;
     z-index: 1;
   }
+
+  
+
   
   @media (max-width:625px) {
     .section2-left-header{
