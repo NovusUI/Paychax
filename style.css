@@ -17,6 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 130px;
+  
  
 }
 
@@ -73,8 +74,22 @@ h6{
 
 .section-3-header{
   text-align: center;
-  padding: 10px 0;
+  padding: 60px 0 10px 0;
   color: #515151;
+  animation: pulsate 3s ease-out infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .cta-header{
@@ -174,7 +189,7 @@ img{
  
  /* this appears only on small screaan*/
  #paychex-small{
-    margin-top:20px;
+    margin-top:40px;
     /* display: none; */
  }
 
@@ -241,7 +256,11 @@ img{
   }
 
   
-
+ @media only screen and (min-width:767px) {
+  #paychex-small{
+    display: none;
+  }
+ }
   
   @media only screen and (max-width: 768px) {
 
@@ -397,6 +416,7 @@ img{
   height:30vh;
   justify-content:space-between;
   padding: 50px 12vw ;
+  flex-wrap: wrap;
 
 }
 .client-paragraph{
